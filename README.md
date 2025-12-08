@@ -1,13 +1,12 @@
 # 🎮 Copier Architectury Template
 
-A modern Copier template for creating Minecraft mods using the Architectury loom, designed to streamline your mod development workflow.
+A modern [Copier](https://github.com/copier-org/copier) template for creating Minecraft mods using the Architectury loom, aimed at simplifying your pre-development setup.
 
 ## ✨ Features
 
 - **Minecraft Version Support**: Currently supports 1.21.1
 - **Multi-loader Support**: Built-in support for Fabric and NeoForge
 - **Architectury Framework**: Uses Architectury loom for cross-loader mod development
-- **Modern Project Structure**: Clean, organized codebase with common and loader-specific modules
 - **Mixin Support**: Comes with ready-to-use mixin configurations
 - **License Configuration**: Support for multiple open-source licenses
 
