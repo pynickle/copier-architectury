@@ -1,5 +1,7 @@
 # 🎮 Copier Architectury 模板
 
+[English](README.md) | 简体中文
+
 一个现代化的 [Copier](https://github.com/copier-org/copier) 模板，用于使用 Architectury loom 创建 Minecraft 模组，旨在简化您的模组开发工作流程。
 
 ## ✨ 特性

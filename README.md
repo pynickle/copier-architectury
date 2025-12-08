@@ -1,5 +1,7 @@
 # 🎮 Copier Architectury Template
 
+English | [简体中文](README_CN.md)
+
 A modern [Copier](https://github.com/copier-org/copier) template for creating Minecraft mods using the Architectury loom, aimed at simplifying your pre-development setup.
 
 ## ✨ Features
