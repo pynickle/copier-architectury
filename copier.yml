@@ -1,0 +1,80 @@
+_subdirectory: project
+
+_jinja_extensions:
+  - copier_templates_extensions.TemplateExtensionLoader
+  - extensions.py:CurrentYearExtension
+
+mod_name:
+  type: str
+  help: Your mod's name
+
+mod_description:
+  type: str
+  help: A short description of your mod
+
+mod_id:
+  type: str
+  help: Your mod id
+  default: "{{ mod_name | lower | replace(' ', '_') | replace('-', '_') }}"
+
+main_class:
+  type: str
+  help: Mod's main class name
+  default: "{{ mod_name | replace(' ', '') | replace('-', '') | replace('_', '') }}"
+
+authors:
+  type: str
+  multiline: true
+  help: Mod authors
+
+environments:
+  type: str
+  help: Target environments
+  multiselect: true
+  choices: |
+    - client
+    - server
+
+organization_domain:
+  type: str
+  help: Mod's organization domain
+  default: "com.{{ authors.splitlines()[0] | lower | replace(' ', '') | replace('-', '') }}"
+
+organization_domain_path:
+  type: str
+  default: "{{ organization_domain | replace('.', '/') }}"
+  when: false
+
+license:
+  type: str
+  help: Your mod's license
+  default: MIT
+  choices:
+    All Right Reserved/No License: ARR
+    Apache License 2.0: Apache-2.0
+    BSD 3-Clause "New" or "Revised" License: BSD-3-Clause
+    Creative Commons Attribution 4.0 International: CC-BY-4.0
+    Creative Commons Attribution Share Alike 4.0 International: CC-BY-SA-4.0
+    Creative Commons Attribution NonCommercial 4.0 International: CC-BY-NC-4.0
+    Creative Commons Attribution NonCommercial ShareAlike 4.0 International: CC-BY-NC-SA-4.0
+    Creative Commons Attribution NoDerivatives 4.0 International: CC-BY-ND-4.0
+    Creative Commons Attribution NonCommercial NoDerivatives 4.0 International: CC-BY-NC-ND-4.0
+    Creative Commons Zero v1.0 Universal: CC0-1.0
+    ISC License: ISC
+    GNU Affero General Public License v3.0: AGPL-3.0
+    GNU General Public License v3.0 only: GPL-3.0
+    GNU Lesser General Public License v3.0 only: LGPL-3.0
+    MIT License: MIT
+    Mozilla Public License 2.0: MPL-2.0
+    Other: Other
+
+
+copyright_holder:
+  type: str
+  help: The name of the person holding the copyright
+  default: "{{ authors.splitlines()[0] }}"
+
+copyright_date:
+  type: str
+  help: The copyright date
+  default: "{{ current_year }}"

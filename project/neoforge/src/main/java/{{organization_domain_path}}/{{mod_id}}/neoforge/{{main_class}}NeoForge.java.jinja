@@ -1,0 +1,12 @@
+package {{ organization_domain }}.{{ mod_id }}.neoforge;
+
+import {{ organization_domain }}.{{ mod_id }}.{{ main_class }};
+import net.neoforged.fml.common.Mod;
+
+@Mod({{ main_class }}.MOD_ID)
+public final class {{ main_class }}NeoForge {
+    public {{ main_class }}NeoForge() {
+        // Run our common setup.
+        {{ main_class }}.init();
+    }
+}
