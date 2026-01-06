@@ -11,6 +11,7 @@ A modern [Copier](https://github.com/copier-org/copier) template for creating Mi
 - **Architectury Framework**: Uses Architectury loom for cross-loader mod development
 - **Mixin Support**: Comes with ready-to-use mixin configurations
 - **License Configuration**: Support for multiple open-source licenses
+- **Optional Fabric API**: Fabric API support can be enabled or disabled during project initialization
 
 ## 📋 Prerequisites
 
@@ -39,7 +40,6 @@ copier copy --trust "gh:pynickle/copier-architectury" {your_project_path}
 
 - Support for additional Minecraft versions
 - Optional Architectury API inclusion for cross-loader compatibility
-- Optional Fabric API integration for Fabric loader
 - Optional Semantic Release Minecraft integration for automated mod publishing
 - Choose which mod loaders to support during project initialization
 - Enhanced configuration options for mod dependencies

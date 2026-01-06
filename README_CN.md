@@ -12,6 +12,7 @@
 - **现代化项目结构**：清晰、有序的代码库，包含公共模块和加载器特定模块
 - **Gradle 构建系统**：自动化构建和依赖管理
 - **许可证配置**：支持多种开源许可证
+- **可选 Fabric API**：Fabric API 支持可在项目初始化时启用或禁用
 
 ## 📋 先决条件
 
@@ -40,7 +41,6 @@ copier copy --trust "gh:pynickle/copier-architectury" {your_project_path}
 
 - 支持更多 Minecraft 版本
 - 可选的 Architectury API 包含，用于跨加载器兼容性
-- 可选的 Fabric API 集成，用于 Fabric 加载器
 - 可选的 Semantic Release Minecraft 集成，用于自动化模组发布
 - 支持在项目初始化时选择要支持的加载器
 - 增强的模组依赖配置选项

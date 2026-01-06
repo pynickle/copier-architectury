@@ -35,6 +35,11 @@ environments:
     - client
     - server
 
+use_fabric_api:
+  type: bool
+  help: Whether to use Fabric API
+  default: true
+
 organization_domain:
   type: str
   help: Mod's organization domain

@@ -27,7 +27,9 @@ configurations {
 dependencies {
     modImplementation "net.fabricmc:fabric-loader:$rootProject.fabric_loader_version"
 
+    {% if use_fabric_api %}
     modImplementation "net.fabricmc.fabric-api:fabric-api:$rootProject.fabric_api_version"
+    {% endif %}
 
     modImplementation "dev.architectury:architectury-fabric:$rootProject.architectury_api_version"
 
